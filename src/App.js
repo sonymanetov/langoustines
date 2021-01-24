@@ -12,17 +12,17 @@ function App() {
       }, []);
 
           const listItems = exchangeRates.map((rate) =>
-            <tr><td class = "ExchangeItem">{rate.name} ({rate.code})</td>
-                <td>{rate.value} грамм</td></tr>
+            <tr key = {rate.code}><td className = "ExchangeItem">{rate.name} ({rate.code})</td>
+                <td>{rate.value} креветочных грамм</td></tr>
           );
 
       return (
         <div className="App">
-          <header className="App-header">
-          <img src={shrimp} className="Shrimp" alt="shrimp" />
-                <table><tr><th class = "ExchangeHead HeadDesign">Валюта</th>
-                          <th class = "HeadDesign">Креветочных грамм за единицу</th></tr>{listItems}</table>
-          </header>
+          <div className="App-header">
+          <img src={shrimp} className="Shrimp ShrimpLocation" alt="shrimp" />
+                <table><thead><tr><th className = "ExchangeHead HeadDesign">Валюта</th>
+                          <th className = "HeadDesign">Креветочных грамм за единицу</th></tr></thead><tbody>{listItems}</tbody></table>
+          </div>
         </div>
       );
 }
