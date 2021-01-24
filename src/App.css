@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.ExchangeItem{
+ text-align: left;
+ padding-right: 5vw;
+}
+
+.ExchangeHead{
+ text-align: left;
+ padding-left: 9vw;
+}
+
+.HeadDesign{
+font-size: calc(20px + 2vmin);
+padding-bottom: 1vw;
+ color: #f75e25
+}
