@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-header {
+.App-body {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -26,9 +26,18 @@
 .HeadDesign{
 font-size: calc(20px + 2vmin);
 padding-bottom: 1vw;
- color: #f75e25
+ color: #f75e25;
 }
 
 .ShrimpLocation{
 height: 50vh;
+}
+
+.Remark{
+font-size: calc(9px + 1vmin);
+color:#f75e25;
+}
+
+.ValueDate{
+color:white;
 }

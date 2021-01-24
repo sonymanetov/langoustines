@@ -5,6 +5,7 @@ from xml.dom import minidom
 
 # стоимость за кг
 SHRIMP_VALUE = 919
+DATE = '24/01/21'
 
 app = Flask(__name__)
 
@@ -17,7 +18,7 @@ def get_current_time():
 def get_exchange_rate():
     crb_response = requests.get('http://www.cbr.ru/scripts/XML_daily.asp')
 
-    response = {'items':[]}
+    response = {'items':[], 'cost':SHRIMP_VALUE, 'date':DATE}
     response_item = {'name':'Российский рубль', 'code': 'RUB', 'value': round(1/SHRIMP_VALUE*1000, 2)}
     response['items'].append(response_item)
     xmldoc = minidom.parseString(crb_response.text)
