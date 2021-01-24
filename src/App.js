@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import shrimp from './assets/shrimpWo4ki.png';
 
 function App() {
     const [currentTime, setCurrentTime] = useState(0);
@@ -13,6 +14,7 @@ function App() {
       return (
         <div className="App">
           <header className="App-header">
+          <img src={shrimp} className="Shrimp" alt="shrimp" />
             <p>The current time is {currentTime}.</p>
           </header>
         </div>
