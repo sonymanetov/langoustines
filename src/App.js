@@ -20,6 +20,14 @@ function App() {
                 <td>{rate.value} лангустиновых грамм</td></tr>
           );
 
+     var todayDate = new Date();
+     var Year = todayDate.getFullYear();
+     var Month = todayDate.getMonth();
+     var Day = todayDate.getDate();
+     let fMonth = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+     var Hour = todayDate.getHours();
+     var Minutes = todayDate.getMinutes();
+
       return (
         <div className="App">
           <div className="App-head">
@@ -34,8 +42,10 @@ function App() {
                 </thead>
                 <tbody>{listItems}</tbody>
               </table>
+              <div><p> Данные актуальны на {Hour}:{Minutes} {Day} {fMonth[Month]} {Year} года. Источник: <a href="https://www.cbr.ru">www.cbr.ru </a></p>
+              </div>
               <div className="Remark" > <hr/> <p>* Значение рассчитывается по средней статистической оценке <span className = "ValueDate">({langCost} руб/кг на {langDate})</span> рыночной стоимости лангустин категории L1. Средний вес лангустины считать за 100 грамм. Ура креветки! </p> </div>
-              <p className="Credits" > Сделал <a href="https://github.com/sonymanetov">Леха Манетов</a> (почти сам) </p>
+              <p className="Credits" > Сделал <a href="https://github.com/sonymanetov">Соня Манетов</a> (почти сам) </p>
             </div>
           </div>
         </div>
