@@ -41,3 +41,16 @@ color:#f75e25;
 .ValueDate{
 color:white;
 }
+
+.Credits{
+color:white;
+font-size: calc(5px + 1vmin);
+}
+
+a {
+color:#f75e25;
+}
+
+a:visited{
+color:#f75e25;
+}

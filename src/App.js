@@ -35,10 +35,10 @@ function App() {
                 <tbody>{listItems}</tbody>
               </table>
               <div className="Remark" > <hr/> <p>* Значение рассчитывается по средней статистической оценке <span className = "ValueDate">({langCost} руб/кг на {langDate})</span> рыночной стоимости лангустин категории L1. Средний вес лангустины считать за 100 грамм. Ура креветки! </p> </div>
+              <p className="Credits" > Сделал <a href="https://github.com/sonymanetov">Леха Манетов</a> (почти сам) </p>
             </div>
           </div>
         </div>
       );
 }
-
 export default App;
