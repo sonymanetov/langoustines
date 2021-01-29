@@ -55,7 +55,7 @@ function App() {
                 </thead>
                 <tbody>{listItems}</tbody>
               </table>
-              <div><p> Курс получен на {crbDate}. Данные актуальны на {updateDate} года. Источник: <a href="https://www.cbr.ru">www.cbr.ru </a></p>
+              <div><p> Курс получен на {crbDate} года. Данные актуальны на {updateDate} года. Источник: <a href="https://www.cbr.ru">www.cbr.ru </a></p>
               </div>
               <div className="Remark" > <hr/> <p>* Значение рассчитывается по средней статистической оценке <span className = "ValueDate">({langCost} руб/кг на {langDate})</span> рыночной стоимости лангустин категории L1. Средний вес лангустины считать за 100 грамм. Ура креветки! </p> </div>
               <p className="Credits" > Сделал <a href="https://github.com/sonymanetov">Соня Манетов</a> (почти сам) </p>
