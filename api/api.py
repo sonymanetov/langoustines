@@ -6,7 +6,7 @@ import datetime
 import pytz
 
 # стоимость за кг
-SHRIMP_VALUE = 919
+SHRIMP_VALUE = 1019
 
 app = Flask(__name__)
 
